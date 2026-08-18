@@ -14,7 +14,7 @@ const NewPost = () => {
   const createPost = async (e) => {
     e.preventDefault();
 
-    const post = {title, body, userId: 1},
+    const post = {title, body, userId: 1};
 
     await blogFetch.post("/posts", {
       body: post,
@@ -28,14 +28,12 @@ const NewPost = () => {
     <form onSubmit={(e) => createPost()}>
       <div className="form-control">
         <label htmlFor="title">Título:</label>
-        <input type='text' name='title' id='title' placeholder='Digite o título do post'/>  
-        onChange={(e) => setTitle(e.target.value)}
+        <input type='text' name='title' id='title' placeholder='Digite o título do post' onChange={(e) => setTitle(e.target.value)} />
       </div>
 
       <div className="form-control">
         <label htmlFor="body">Conteúdo:</label>
-        <textarea name="body" id="body" placeholder='Digite o conteúdo do post'></textarea>
-        onChange={(e) => setBody(e.target.value)}
+        <textarea name="body" id="body" placeholder='Digite o conteúdo do post' onChange={(e) => setBody(e.target.value)}></textarea>
       </div>
      
      <input type="submit" value="Criar post" className='btn' />
