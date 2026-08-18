@@ -23,7 +23,8 @@ const NewPost = () => {
     navigate("/");
   }
 
-  return <div className="new-post">
+  return 
+  <div className="new-post">
     <h2>Inserir novo post:</h2>
     <form onSubmit={(e) => createPost()}>
       <div className="form-control">
