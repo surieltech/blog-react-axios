@@ -9,7 +9,8 @@
     flex: 1;  /* Faz o conteúdo crescer e empurrar o footer para baixo */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding um pouco maior pro conteudo nao ser engolido pela navbar */
+    padding: 6rem 2rem 2rem;
     width: 100%;
 }
 

@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Blinker";
 }
-
+/* ===== ESTILOS GLOBAIS ===== */
 body {
-    background-color: #0e1217;
-    color: #FFF;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ul {
@@ -26,4 +28,41 @@ a:hover{
 
 p {
     color: #a9abb3;
+}
+
+/* ===== VARIÁVEIS DOS TEMAS ===== */
+:root {
+    /* Fundos */
+    --bg-primary: #0a0a1a;
+    --bg-secondary: #17191f;
+    --bg-card: #1a1a2e;
+    --bg-input: #1a1a3e;
+    
+    /* Textos */
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-muted: #6c6c7a;
+    
+    /* Bordas */
+    --border-color: #2a2a4a;
+    --border-light: rgba(255, 255, 255, 0.08);
+    
+    /* Sombras */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+    --bg-primary: #f0f2f5;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --bg-input: #f8f9fa;
+    
+    --text-primary: #1a1a2e;
+    --text-secondary: #2d3436;
+    --text-muted: #636e72;
+    
+    --border-color: #dfe6e9;
+    --border-light: rgba(0, 0, 0, 0.08);
+    
+    --shadow-color: rgba(0, 0, 0, 0.08);
 }

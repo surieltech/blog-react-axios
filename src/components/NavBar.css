@@ -1,4 +1,11 @@
 .navbar {
+/* para deixar a navbar fixa no topo */
+    position: fixed;          
+    top: 0;                   
+    left: 0;                  
+    right: 0;                 
+    z-index: 1000;   
+/* resto das configuracoes padrao */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,7 +19,11 @@
 
 .navbar ul{
     display: flex;
-    gap: 1rem;
+    align-items: center;      
+    gap: 1.5rem;              
+    list-style: none;
+    margin: 0;                
+    padding: 0;     
 }
 
 .new-btn {
