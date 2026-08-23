@@ -1,6 +1,19 @@
-.container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding:  0;
+/* src/App.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Altura mínima da tela toda */
 }
+
+.container {
+    flex: 1;  /* Faz o conteúdo crescer e empurrar o footer para baixo */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* O footer já vai ficar no final automaticamente */
+
+
 
