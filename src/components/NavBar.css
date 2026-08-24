@@ -35,3 +35,35 @@
     border-radius: 1rem;
     opacity: 1;
 }
+
+/* css do login */
+.logout-btn {
+    background: transparent;
+    border: 1px solid #e17055;
+    color: #e17055;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #e17055;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.login-btn-nav {
+    color: #b0b0b0;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border: 1px solid #6c5ce7;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.login-btn-nav:hover {
+    background: #6c5ce7;
+    color: #fff;
+}
