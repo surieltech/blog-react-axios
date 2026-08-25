@@ -10,10 +10,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #17191f;
+    background-color: var(--bg-secondary);
 }
 
-.navbar h2 a {
+.navbar h1 a {
+    color: var(--text-primary);
     opacity: 1;
 }
 
@@ -26,9 +27,17 @@
     padding: 0;     
 }
 
+.navbar ul a {
+    color: var(--text-muted); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
 .new-btn {
+    color: var(--text-muted);
     font-weight: bold;
-    border: 1px solid #fff;
+    border: 1px solid var(--text-primary);
     /* pra dar aspecto de botao retangular */
     padding: .5rem 1rem;
     /* pra deixar o botao redondo */

@@ -1,16 +1,63 @@
-# React + Vite
+# 📝 SuriBlog - Blog com Painel Administrativo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Blog completo desenvolvido com **React** e **Vite**, consumindo a API do JSONPlaceholder para gerenciamento de posts com sistema de autenticação, temas dark/light e painel administrativo.
+---
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ✅ Listar, criar, editar e excluir posts
+- ✅ Sistema de login com rotas protegidas
+- ✅ Dark/Light Mode com persistência
+- ✅ Navbar fixa e Footer
+- ✅ Painel administrativo exclusivo
+- ✅ Persistência de dados no localStorage
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔐 Credenciais de Teste
 
-## Expanding the ESLint configuration
+| Campo | Valor |
+|-------|-------|
+| **Email** | `admin@blog.com` |
+| **Senha** | `123456` |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- React 18
+- React Router DOM 6.20
+- Axios 1.6
+- React Icons 4.11
+- Vite 4
+- Context API
+- localStorage
+
+---
+
+## 🔌 Consumo de API
+
+O projeto consome a **JSONPlaceholder API** através do Axios.
+
+### Endpoints Utilizados
+
+| Método | Endpoint | Funcionalidade |
+|--------|----------|----------------|
+| `GET` | `/posts` | Listar todos os posts |
+| `GET` | `/posts/:id` | Buscar post específico |
+| `POST` | `/posts` | Criar novo post |
+| `PUT` | `/posts/:id` | Atualizar post |
+| `DELETE` | `/posts/:id` | Excluir post |
+
+### Exemplo de Uso
+
+```javascript
+// Buscar todos os posts
+const response = await blogFetch.get('/posts');
+setPosts(response.data);
+
+// Criar novo post
+await blogFetch.post('/posts', { title, body, userId: 1 });
+
+📝 Licença
+Este projeto é de código aberto e pode ser usado livremente para fins educacionais ou pessoais.

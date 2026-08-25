@@ -89,7 +89,3 @@
     font-size: 0.85rem;
     color: var(--text-muted, #6c6c7a);
 }
-
-.forgot-password strong {
-    color: var(--text-primary, #fff);
-}
